@@ -73,16 +73,8 @@ from matplotlib import pyplot as plt
 
 # Constants
 N = 6556300.0         # Population of island of Ireland - North + Republic
-# rb = 0.008535/365     # Birth rate per day
-# rd = 0.004845/365     # Death rate per day
 
-# alpha = 0.0115        # Rate exposed people become infectious per day
-# gamma = 0.05          # Rate infected people recover per day
-# Data source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7376536/
-
-# beta = 2.0      # Number of close contacts per person per day (post lockdown)
-# Data source: https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-Contract-tracing-scale-up.pdf
-
+# See preamble above for variable info
 β = 2
 L = (5.9 + 3.9)/2
 f = (0.82 + 0.18)/2
