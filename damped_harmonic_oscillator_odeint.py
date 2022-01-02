@@ -1,5 +1,6 @@
 """
-Computational Physics - Damped Harmonic Oscillator:
+Computational Physics - Damped Harmonic Oscillator
+
 This program will use odeint to calculate the damped harmonic oscillator.
 The damping effect will be adjusted via the damping ratio (R). The 
 greater R, the more damped the oscillator will become.
@@ -28,9 +29,7 @@ from matplotlib import pyplot as plt
 w0 = 1      # Initial angular frequency
 y0 = 0      # Initial displacement
 v0 = 1      # Initial dy/dt
-
 ics = [y0, v0]  # Place initial conditions in a list
-
 R_start = 0     # Initial damping ratio
 R_end = 1.5     # Final damping ratio
 R_step = 0.5   # Damping ratio step
@@ -40,7 +39,6 @@ R_list = np.arange(R_start, R_end + R_step, R_step)
 
 # Construct a list of time variables from 0 to 25 in steps of 0.1 seconds
 t = np.arange(0, 25, 0.1)
-
 
 def slope(ics, t, R, w0):
     '''
@@ -60,19 +58,15 @@ def slope(ics, t, R, w0):
     DESCRIPTION: List[0] = dy/dt (First order derivative of y)
                  List[1] = d^2y/dt^2 (Second order derivative of y)
     '''
-
     # d^2y/dt^2 = -2 * R * w0 * dy/dt - w0^2 * y
     # d/dt dy/dt = -2 * R * w0 * dy/dt - w0^2 * y
     # dy/dt = v
     # d^2y/dt^2 = dv/dt = -2 * R * w0 * v - w0^2 * y
-    
     y = ics[0]    # = y
     v = ics[1]    # = y'
     dv_dt = -2 * R * w0 * v - w0**2 * y  # Calculate derivative of v (v' = y'')
-    
     # Return [1st y derivative (y', or v), 2nd y derivative (y'', or v')]
     return [v, dv_dt]
-
 
 def plot_graph(R, Y_list, t):
     """
@@ -90,7 +84,6 @@ def plot_graph(R, Y_list, t):
     
     Plot a graph of Y_list vs t with the graph label determined by R value
     """
-    
     plt.xlabel('Time (s)')  # Set x-axis label
     plt.ylabel('y (m)')     # Set y-axis label
     plt.title('Damped Harmonic Oscillator')   # Set graph title
@@ -116,7 +109,6 @@ def plot_graph(R, Y_list, t):
     # Display the graph legend in the upper right corner. Font size set small
     plt.legend(loc='upper right', prop={'size': 'small'})
     
-
 # Iterate through R values in R_list
 for R in R_list:
     # Differentiate using slope function, initial conditions, range = t,
