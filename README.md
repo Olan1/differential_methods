@@ -1,2 +1,3 @@
 # differential_methods
-Programmes using different different methods to solve computational physics problems
+
+Programmes using differential methods to solve computational physics problems
