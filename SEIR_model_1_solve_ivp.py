@@ -56,7 +56,6 @@ beta = 2.0      # Number of close contacts per person per day (post lockdown)
 # Data source: https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-Contract-tracing-scale-up.pdf
 
 S = N       # Number of susceptable people (Initially = total population)
-
 E = 5077    # Number exposed to disease
 I = 736     # Number currently infected
 R = 32      # Number recovered
