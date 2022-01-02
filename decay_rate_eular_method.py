@@ -54,8 +54,7 @@ def slope(t, N):
     '''
     return -decay_const * N
 
-# Eular Calculation:
-
+""" Eular Calculation: """
 # Set initial N value
 N = N0
 # Loop from t_min to t_max at intervals of t_step
@@ -71,6 +70,7 @@ for t in np.arange(t_min, t_max + t_step, t_step):
     # Set new N value to N1
     N = N1
 
+""" Plot """
 # Set x-axis label
 plt.xlabel('Time (t)')
 # Set y-axis label
