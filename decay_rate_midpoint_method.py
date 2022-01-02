@@ -55,7 +55,7 @@ def slope(t, N):
     '''
     return -decay_const * N
 
-""" Eular Calculation: """
+""" Midpoint Method: """
 # Set initial N value
 N = N0
 # Loop from t_min to t_max at intervals of t_step
