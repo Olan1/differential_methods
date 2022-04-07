@@ -70,6 +70,10 @@ t = np.linspace(ti, tf, 10000)
 
 def slope(t, ics, N, rb, rd, alpha, beta, gamma):
     """
+    Calculate the slopes of the S, E, I, and R variables
+    
+    ...
+    
     Parameters
     ----------
     t : TYPE: Float
