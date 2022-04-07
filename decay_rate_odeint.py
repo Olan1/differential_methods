@@ -35,6 +35,10 @@ t = np.arange(ti, tf, 1)   # List of time values from ti to tf in steps of 1
 # Slope function
 def slope(N, t, lmbda):
     '''
+    Calculate the slope for the radioactive decay equation
+    
+    ...
+    
     Parameters
     ----------
     N : TYPE - Integar
