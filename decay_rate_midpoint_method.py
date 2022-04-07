@@ -40,6 +40,10 @@ N_ana = []  # y component (Expected quantity)
 
 def slope(t, N):
     '''
+    Calculate the slope for the radioactive decay equation
+    
+    ...
+    
     Parameters
     ----------
     t : TYPE: Float
