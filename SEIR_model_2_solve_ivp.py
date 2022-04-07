@@ -106,6 +106,10 @@ t = np.linspace(ti, tf, 10000)
 
 def slope(t, ics, N, β, L, f, C, D, τ, q, T, h, i, j):
     """
+    Calculate the slope for each variable in the SEIR model
+    
+    ...
+    
     Parameters
     ----------
     t : TYPE: Float
