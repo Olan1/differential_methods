@@ -42,6 +42,10 @@ t = np.arange(0, 25, 0.1)
 
 def slope(ics, t, R, w0):
     '''
+    Calculate the slope of the damped harmonic oscillator
+    
+    ...
+    
     Parameters
     ----------
     ics : TYPE: List
@@ -70,6 +74,9 @@ def slope(ics, t, R, w0):
 
 def plot_graph(R, Y_list, t):
     """
+    Plot a graph of a damped harmonic oscillator with a specific damping ratio(R),
+    over time period t.
+    
     Parameters
     ----------
     R : TYPE: Float
